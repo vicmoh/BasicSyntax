@@ -36,3 +36,17 @@ var fullName = firstName + " " + lastName
 var age = 12
 var fullName2 = "\(firstName) + \(lastName) is \(age)"
 
+//func that return int
+func getArea(length: Int, width: Int) -> Int{
+    var area: Int
+    area = length * width
+    return area
+    /*or
+    let area = length * width
+    return area
+     */
+}
+
+let areaResult = getArea(length: 10, width: 10)
+
+

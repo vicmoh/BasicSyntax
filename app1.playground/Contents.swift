@@ -64,3 +64,25 @@ print(employeeSalaries);
 //create emoty array
 var students = [String]()//the bracket is init for empty, if not there it is only declr
 
+//loop 
+var x = 0
+repeat {
+    (employeeSalaries[x])+=0.50
+    x += 1
+}while (x < employeeSalaries.count)
+print(employeeSalaries)
+
+//for loop
+for i in 0..<employeeSalaries.count{
+    (employeeSalaries[i])+=0.25
+}//end for
+print(employeeSalaries)
+//for each array loop you can also
+for eachSalary in employeeSalaries{
+    print("Salary: \(eachSalary) ")
+}//end for
+
+
+
+
+

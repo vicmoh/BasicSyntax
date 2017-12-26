@@ -84,6 +84,27 @@ for eachSalary in employeeSalaries{
 }//end for
 
 //hashTables
+var nameOfInts = [Int: String]()
+nameOfInts[3] = "three"
+//claen all key and values
+nameOfInts = [:]
+//another example
+var airports: [String: String] = ["YYZ": "Toronto Pearson", "LAX": "Los Angles International"]
+//add more hash, same with re-assigning
+airports["LHR"] = "London Airport"
+airports["delete"] = "to be delete"
+airports["delete"] = nil
+//in loop
+for (key, value) in airports{
+    print("\(key): \(value)")
+}//end for
+//for key
+for key in airports.keys{
+    print("Key: \(key)")
+}//end for
+
+
+
 
 
 

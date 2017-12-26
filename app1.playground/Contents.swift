@@ -5,17 +5,34 @@ import UIKit
 var str = "Hello, playground"
 var message = "Hello World"
 
-println(message)
+print(message)
 
 var a = 1
 var b = 15
 var total = a + b
 
-println(total)
+print(total)
 
 if (total < 20){
-    println("hello")
+    print("hello")
 }
 
+//binary
+var amICool = true
+amICool = !amICool//became false
 
+//ternary
+var feelGoodAboutMyself = true
+feelGoodAboutMyself = amICool ? true : false
+
+var bankAccountBalance = 100
+var cashRegisterMessage = bankAccountBalance >= 50 ? "Higher than 50" : "Not enough"
+
+//string
+var firstName = "Jack"
+var lastName = "Bauer"
+var fullName = firstName + " " + lastName
+//another way
+var age = 12
+var fullName2 = "\(firstName) + \(lastName) is \(age)"
 

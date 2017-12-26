@@ -161,6 +161,7 @@ class Dog{
 var myDog = Dog(someType: "Gold Retriever")
 print(myDog.type)
 
+//objects and classes
 
 
 

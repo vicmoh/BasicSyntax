@@ -55,6 +55,12 @@ func passByRef(anyNum: inout Int){
 var bank = 10
 passByRef(anyNum: &bank)
 
-
-
+//array dec
+var employeeSalaries: [Double] = [45,54,100,200]
+employeeSalaries.append(50)
+employeeSalaries.count
+employeeSalaries.remove(at: 2)
+print(employeeSalaries);
+//create emoty array
+var students = [String]()//the bracket is init for empty, if not there it is only declr
 

@@ -103,6 +103,66 @@ for key in airports.keys{
     print("Key: \(key)")
 }//end for
 
+//optional
+var lotteryWinnings: Int?//may have value or may not is optional "?"
+//print if exist
+if lotteryWinnings != nil{
+    print(lotteryWinnings!)
+}//end if
+//another example
+if let winnings = lotteryWinnings{//if it has value, assign the value
+    print(winnings)
+}//end if
+print(lotteryWinnings as Any)//print any
+
+class Car{
+    var model: String?
+}//end class
+//dec car
+var vehicle: Car?
+//if it was in a class
+if let v = vehicle {
+    if let m = v.model{
+        print(m)
+    }//end if
+}//end if
+//but what if it is empty and you want to print it as default
+print(vehicle?.model ?? "None")
+//create the car class and assign to test the optional
+vehicle = Car()
+vehicle?.model = "Bronco"
+//you can also do the shortcut of nested if statement
+if let v = vehicle, let m = v.model{
+    print(m)
+}//end if
+
+//computed properties (its like getter in java)
+class Person{
+    var _age: Int!
+    var age:Int{
+        if _age == nil{
+            _age = 15
+        }
+        return _age
+    }//end var
+}//end class
+var jack = Person()
+print(jack._age ?? 0)//must have default
+print(jack.age)
+
+//class with constructor
+class Dog{
+    var type: String
+    //constructor
+    init(someType: String){
+        self.type = someType//self is similar to "this" in java
+    }//end init
+}//end class
+var myDog = Dog(someType: "Gold Retriever")
+print(myDog.type)
+
+
+
 
 
 

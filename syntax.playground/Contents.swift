@@ -161,7 +161,40 @@ class Dog{
 var myDog = Dog(someType: "Gold Retriever")
 print(myDog.type)
 
-//objects and classes
+//inheritance
+/*******************************************/
+class Vehicle{
+    var tires = 4
+    var make: String?
+    var model: String?
+    var currentSpeed: Double = 0
+    //init
+    init(){
+        print("I am the parent")
+    }
+    //func
+    func drive(speedIncrease: Double){
+        currentSpeed += speedIncrease * 2
+    }//end func
+    func brake(){
+        
+    }//end func
+}//end class
+//chile one
+class SportsCar: Vehicle{
+    override init(){
+        super.init()//super()
+        print("I am the child")
+        make = "BMW"
+        model = "3 series"
+    }//end init
+    
+    override func drive(speedIncrease: Double){
+        currentSpeed += speedIncrease * 3
+    }//end func
+}//end class
+let ferrari = SportsCar()
+
 
 
 

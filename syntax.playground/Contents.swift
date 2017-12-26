@@ -195,6 +195,28 @@ class SportsCar: Vehicle{
 }//end class
 let ferrari = SportsCar()
 
+//polymorphism
+/**********************************/
+//define polymorphism = the condition of differnt forms
+class Shape{
+    var area: Double?
+    func calculateArea(valA: Double, valB: Double){
+        preconditionFailure("This method must be overridden")
+    }//there is no abstract func in swift like in java
+}//end class
+
+class Rectangle: Shape{
+    override func calculateArea(valA: Double, valB: Double){
+        area = valA * valB
+    }//end func
+}//end class
+
+class Triangle: Shape{
+    override func calculateArea(valA: Double, valB: Double){
+        area = (valA * valB)/2
+    }//end func
+}//end class
+
 
 
 

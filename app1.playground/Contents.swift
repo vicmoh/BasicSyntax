@@ -2,20 +2,21 @@
 
 import UIKit
 
+//simple stuff
 var str = "Hello, playground"
 var message = "Hello World"
-
 print(message)
 
+//basic value assignment
 var a = 1
 var b = 15
 var total = a + b
-
 print(total)
 
-if (total < 20){
+//if statement no need for bracket
+if total < 20{
     print("hello")
-}
+}//end if
 
 //binary
 var amICool = true
@@ -82,6 +83,7 @@ for eachSalary in employeeSalaries{
     print("Salary: \(eachSalary) ")
 }//end for
 
+//hashTables
 
 
 

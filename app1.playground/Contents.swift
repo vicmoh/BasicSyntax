@@ -45,8 +45,16 @@ func getArea(length: Int, width: Int) -> Int{
     let area = length * width
     return area
      */
-}
-
+}//end func
 let areaResult = getArea(length: 10, width: 10)
+
+//pas by rerferene
+func passByRef(anyNum: inout Int){
+    anyNum = anyNum + 10
+}//end func
+var bank = 10
+passByRef(anyNum: &bank)
+
+
 
 
